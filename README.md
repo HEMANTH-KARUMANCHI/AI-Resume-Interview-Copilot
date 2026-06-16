@@ -8,7 +8,7 @@ Job seekers often struggle to understand how well their resume matches a job des
 
 The goal is to build a practical AI application that demonstrates real-world GenAI engineering skills beyond a simple chatbot.
 
----
+
 
 ## 🚀 Features Implemented
 
@@ -33,7 +33,6 @@ The goal is to build a practical AI application that demonstrates real-world Gen
 * Extract skills from job descriptions
 * Display resume skills and job description skills side-by-side
 
----
 
 ## 🏗️ Project Architecture
 
@@ -51,7 +50,7 @@ User Uploads Resume (PDF)
  Display Extracted Skills
 ```
 
----
+
 
 ## 📂 Project Structure
 
@@ -81,7 +80,6 @@ AI_Resume_Matcher/
 └── venv/
 ```
 
----
 
 ## 🛠️ Technology Stack
 
@@ -110,7 +108,7 @@ AI_Resume_Matcher/
 
 * Streamlit Cloud (planned)
 
----
+
 
 ## 📸 Current Workflow
 
@@ -121,7 +119,7 @@ AI_Resume_Matcher/
 5. Extract skills from the job description.
 6. Display both skill sets for comparison.
 
----
+
 
 ## 🔜 Upcoming Features
 
@@ -151,7 +149,7 @@ AI_Resume_Matcher/
 * Multiple job description comparison
 * Streamlit Cloud deployment
 
----
+
 
 ## 🎯 Key AI Concepts Demonstrated
 
@@ -164,7 +162,7 @@ AI_Resume_Matcher/
 * Large Language Model Integration (planned)
 * AI-Assisted Career Guidance
 
----
+
 
 ## 👨‍💻 Author
 
