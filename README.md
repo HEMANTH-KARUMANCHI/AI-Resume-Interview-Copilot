@@ -1,87 +1,65 @@
 # 🤖 AI Resume & Interview Copilot
 
-An AI-powered application that analyzes a candidate's resume against a job description to provide intelligent career insights, including skill extraction, job matching, skill-gap analysis, personalized recommendations, and interview preparation support.
+An AI-powered career assistant that analyzes resumes against job descriptions, identifies skill gaps, calculates match scores, and generates AI-powered recommendations to improve job readiness.
 
-## 📌 Project Objective
+---
 
-Job seekers often struggle to understand how well their resume matches a job description and what skills they need to improve. This project aims to bridge that gap using NLP and Large Language Models (LLMs).
+## 🚀 Features
 
-The goal is to build a practical AI application that demonstrates real-world GenAI engineering skills beyond a simple chatbot.
-
-
-
-## 🚀 Features Implemented
-
-### ✅ Phase 1: Project Setup
-
-* Professional Python project structure
-* Virtual environment setup
-* Git and GitHub integration
-* `.gitignore` configuration
-* Streamlit application setup
-
-### ✅ Phase 2: Resume Processing
+### Resume Analysis
 
 * Upload resumes in PDF format
-* Extract text from multi-page PDF resumes using `pdfplumber`
-* Display extracted resume content within the application
+* Extract text from multi-page resumes
+* Parse resume content automatically
 
-### ✅ Phase 3: Skill Extraction
+### Skill Matching
 
-* Accept job descriptions as text input
 * Extract skills from resumes
 * Extract skills from job descriptions
-* Display resume skills and job description skills side-by-side
+* Calculate resume-job match percentage
+* Identify matching skills
+* Detect missing skills
 
+### AI-Powered Career Guidance
 
-## 🏗️ Project Architecture
+* Resume improvement suggestions
+* Skill-gap analysis
+* Learning recommendations
+* Interview preparation guidance
+* Strength and weakness assessment
+
+### User Interface
+
+* Interactive Streamlit dashboard
+* Side-by-side skill comparison
+* Match score visualization
+* AI-generated analysis reports
+
+---
+
+## 🏗️ Workflow
 
 ```text
-User Uploads Resume (PDF)
-            ↓
-      Resume Parser
-            ↓
-     Skill Extraction
-            ↓
-   Job Description Input
-            ↓
- Job Description Analysis
-            ↓
- Display Extracted Skills
+Resume Upload
+      ↓
+Resume Parsing
+      ↓
+Skill Extraction
+      ↓
+Job Description Analysis
+      ↓
+Skill Matching Engine
+      ↓
+Match Score Calculation
+      ↓
+Gemini AI Analysis
+      ↓
+Recommendations & Interview Guidance
 ```
 
+---
 
-
-## 📂 Project Structure
-
-```text
-AI_Resume_Matcher/
-│
-├── app.py
-├── README.md
-├── requirements.txt
-├── .gitignore
-├── .env
-│
-├── assets/
-│
-├── core/
-│   └── pipeline.py
-│
-├── data/
-│
-├── utils/
-│   ├── parser.py
-│   ├── extractor.py
-│   ├── matcher.py
-│   ├── llm_engine.py
-│   └── prompts.py
-│
-└── venv/
-```
-
-
-## 🛠️ Technology Stack
+## 🛠️ Tech Stack
 
 ### Frontend
 
@@ -95,61 +73,40 @@ AI_Resume_Matcher/
 
 * pdfplumber
 * pandas
-* regex
 * python-dotenv
-* OpenAI API (planned)
+* regex
+* Google Gemini API
 
-### Version Control
+### Development Tools
 
 * Git
 * GitHub
+* VS Code
 
-### Deployment
+---
 
-* Streamlit Cloud (planned)
+## 📂 Project Structure
 
+```text
+AI_Resume_Matcher/
+│
+├── app.py
+├── requirements.txt
+├── README.md
+├── .gitignore
+│
+├── assets/
+├── data/
+│
+└── utils/
+    ├── parser.py
+    ├── extractor.py
+    ├── matcher.py
+    ├── llm_engine.py
+    └── prompts.py
+```
 
-
-## 📸 Current Workflow
-
-1. Upload a PDF resume.
-2. Extract resume text.
-3. Paste a job description.
-4. Extract skills from the resume.
-5. Extract skills from the job description.
-6. Display both skill sets for comparison.
-
-
-
-## 🔜 Upcoming Features
-
-### Phase 4: Matching Engine
-
-* Match percentage calculation
-* Matching skills identification
-* Missing skills detection
-
-### Phase 5: AI Enhancements
-
-* Resume improvement suggestions
-* Skill-gap analysis using LLMs
-* Personalized learning recommendations
-
-### Phase 6: Interview Preparation
-
-* Technical interview questions
-* Behavioral interview questions
-* Role-specific interview preparation
-
-### Phase 7: Advanced Features
-
-* ATS score estimation
-* Resume section analysis
-* PDF report export
-* Multiple job description comparison
-* Streamlit Cloud deployment
-
-
+---
 
 ## 🎯 Key AI Concepts Demonstrated
 
@@ -157,15 +114,37 @@ AI_Resume_Matcher/
 * Information Extraction
 * Natural Language Processing (NLP)
 * Skill Extraction
+* Prompt Engineering
+* Large Language Model (LLM) Integration
 * Recommendation Systems
-* Prompt Engineering (planned)
-* Large Language Model Integration (planned)
 * AI-Assisted Career Guidance
 
+---
 
+## 📌 Example Outputs
+
+* Resume Match Score
+* Matching Skills
+* Missing Skills
+* Resume Improvement Suggestions
+* Learning Roadmap
+* Interview Preparation Topics
+
+---
+
+## 🔮 Planned Enhancements
+
+* ATS Score Estimation
+* Resume Section Analysis
+* PDF Report Generation
+* Multiple Job Description Comparison
+* Streamlit Cloud Deployment
+* Multi-LLM Support (Gemini/OpenAI)
+
+---
 
 ## 👨‍💻 Author
 
 **Hemanth Karumanchi**
 
-Built as a practical GenAI project to strengthen applications for AI Engineer, GenAI Engineer, Machine Learning Engineer, Data Science, and Software Engineering roles.
+Built as a portfolio project to demonstrate practical GenAI, NLP, and AI Engineering skills through a real-world career assistance application.
