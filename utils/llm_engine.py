@@ -1,25 +1,48 @@
 import os
+import streamlit as st
 from dotenv import load_dotenv
 from google import genai
-from utils.prompts import RESUME_ANALYSIS_PROMPT
 
 load_dotenv()
 
-client = genai.Client(
-    api_key=os.getenv("GEMINI_API_KEY")
-)
+api_key = os.getenv("GEMINI_API_KEY")
 
+# For Streamlit Cloud deployment
+if not api_key:
+    api_key = st.secrets.get("GEMINI_API_KEY")
+
+client = genai.Client(
+    api_key=api_key
+)
 
 def analyze_resume_with_gemini(resume_text, job_description):
 
-    prompt = RESUME_ANALYSIS_PROMPT.format(
-        resume_text=resume_text,
-        job_description=job_description
-    )
+    try:
 
-    response = client.models.generate_content(
-        model="gemini-2.5-flash",
-        contents=prompt
-    )
+        prompt = f"""
+        Analyze the resume against the job description.
 
-    return response.text
+        Resume:
+        {resume_text}
+
+        Job Description:
+        {job_description}
+        """
+
+        response = client.models.generate_content(
+            model="gemini-2.5-flash-lite",
+            contents=prompt
+        )
+
+        return response.text
+
+    except Exception as e:
+
+        return f"""
+⚠️ Gemini service is temporarily unavailable.
+
+Error:
+{str(e)}
+
+Please try again after a few minutes.
+"""
