@@ -106,6 +106,7 @@ AI_Resume_Matcher/
     └── prompts.py
 ```
 
+
 ---
 
 ## 🎯 Key AI Concepts Demonstrated
@@ -121,6 +122,7 @@ AI_Resume_Matcher/
 
 ---
 
+
 ## 📌 Example Outputs
 
 * Resume Match Score
@@ -129,6 +131,7 @@ AI_Resume_Matcher/
 * Resume Improvement Suggestions
 * Learning Roadmap
 * Interview Preparation Topics
+
 
 ---
 
@@ -141,14 +144,14 @@ AI_Resume_Matcher/
 * Streamlit Cloud Deployment
 * Multi-LLM Support (Gemini/OpenAI)
 
+
 ---
 
 ## 👨‍💻 Author
 
-**Hemanth Karumanchi**
+** Karumanchi Hemanth **
 
 Built as a portfolio project to demonstrate practical GenAI, NLP, and AI Engineering skills through a real-world career assistance application.
-
 
 ## 🌐 Live Demo
 
