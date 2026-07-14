@@ -74,7 +74,6 @@ Recommendations & Interview Guidance
 * pdfplumber
 * pandas
 * python-dotenv
-* regex
 * Google Gemini API
 
 ### Development Tools
